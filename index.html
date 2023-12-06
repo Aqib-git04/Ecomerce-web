@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Include the Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans">
+
+    <div class="p-4">
+        <!-- header -->
+        <header id="header" class="fixed top-0 left-0 w-full text-slate-400 p-4 flex items-center justify-between z-50">
+            <!-- content-inside-header -->
+            <div class="flex">
+                <h1 class="text-xl cursor-pointer hover:text-black">Essential Classifieds</h1>
+                <nav class="flex-grow text-center">
+
+                    <!-- list section -->
+                    <ul id="li" class="flex ml-4">
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Home</a></li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">About</a></li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Contact</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Post</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Categories</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex" id="Register-login">
+                <span class="text-sm flex cursor-pointer hover:text-black">Register | Log In</span>
+
+                <!--  hidden hamburger-menu for responsiveness  -->
+                <div id="hamburger" class="ml-4 hidden ">
+                    <div class="w-5 h-1 m-1  bg-white "></div>
+                    <div class="w-5 h-1 m-1  bg-white"></div>
+                    <div class="w-5 h-1 m-1  bg-white"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- center body -->
+    <!-- image section -->
+
+    <div class="container mx-auto mt-8">
+
+        <div class="relative">
+            <img src="./assets/background-img.jpeg" alt=""
+                class="mx-auto max-w-full h-[100%] max-h-[600px] rounded-lg bg-cover bg-center">
+            <div id="div" class="absolute items-center text-white">
+
+                <h3 class="" id="center-text">The best place to buy your house,sell your car or find a job in dubai</h3>
+
+                <!-- buttons btw senter  images -->
+                <div id="buttons-section" class=" flex items-center justify-center text-black mt-9 mb-4">
+                    <button id="btn"
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border hover:bg-red-600 text-sm  ">All</button>
+                    <button id="btn"
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border hover:bg-red-600 text-sm  ">House
+                        Appliances</button>
+                    <button id="btn"
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border  hover:bg-red-600 text-sm  ">Electronics</button>
+                    <button id="btn"
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border  hover:bg-red-600 text-sm  ">Mobile
+                        Phones And
+                        Market</button>
+                    <button id="btn"
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border hover:bg-red-600 text-sm  ">Motors</button>
+                    <button id="btn"
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border hover:bg-red-600 text-sm  ">Property
+                        For
+                        Rent</button>
+                </div>
+                <div class="flex flex-wrap justify-center items-center">
+                    <!-- Input field -->
+                    <input type="text" class="border px-4 py-2 mr-2 " placeholder="Search For Anything" id="input">
+
+                    <!-- Button -->
+                    <button class="bg-red-600  text-white px-4 py-2" id="submit-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image section ends here -->
+
+    <!-- Popular Categories section -->
+
+
+
+    <div id="popular-categories">
+        
+            <h1 class="font-bold text-3xl mt-8 mb-7">Popular Categories</h1>
+        
+        <div class="flex justify-evenly items-center" id="items-container">
+            
+            <div>
+                <h1 id="list-heading" class="text-3xl">House Appliances</h1>
+                <li class="list-none" >Large Appliances/White Goods</li>
+                <li class="list-none" >Small Kitchen Appliances</li>
+                <li class="list-none" >Outdoor Appliances</li>
+                <li class="list-none" >Small Bathroom Appliances</li>
+                <li class="list-none" >All in House Appliances</li>
+            </div>
+
+            <div>
+                <h1 id="list-heading" class="text-3xl">Electronics</h1>
+                <li class="list-none" >Computers</li>
+                <li class="list-none" >All in Electronics</li>
+                <li class="invisible"></li>
+                <li class="invisible"></li>
+                <li class="invisible"></li>
+               
+            </div>
+            <div> <h1 id="list-heading" class="text-3xl">Mobile Phones and Tablets
+            </h1>
+                <li class="list-none" >Mobile Phones</li>
+                <li class="list-none" >Mobile Phone & Tablet Accessories</li>
+                <li class="list-none" >Tablets</li>
+                <li class="list-none" >All in Mobile Phones and Tablets</li>
+                <li class="invisible"></li></div>
+            <div>
+                <h1 id="list-heading" class="text-3xl">Motors</h1>
+                <li class="list-none" >Vehicles</li>
+                <li class="list-none" >Auto Accessories & Parts</li>
+                <li class="list-none" >Heavy Vehicles</li>
+                <li class="list-none" >All in Motors</li>
+                <li class="invisible"></li>
+            </div>
+        </div>
+
+        <!-- close popiular categories -->
+
+    </div>
+    <div class="flex justify-evenly items-center" id="items-container">
+            
+        <div>
+            <h1 id="list-heading" class="text-3xl">House Appliances</h1>
+            <li class="list-none" >Large Appliances/White Goods</li>
+            <li class="list-none" >Small Kitchen Appliances</li>
+            <li class="list-none" >Outdoor Appliances</li>
+            <li class="list-none" >Small Bathroom Appliances</li>
+            <li class="list-none" >All in House Appliances</li>
+        </div>
+
+        <div>
+            <h1 id="list-heading" class="text-3xl">Electronics</h1>
+            <li class="list-none" >Computers</li>
+            <li class="list-none" >All in Electronics</li>
+            <li class="invisible"></li>
+            <li class="invisible"></li>
+            <li class="invisible"></li>
+           
+        </div>
+        <div> <h1 id="list-heading" class="text-3xl">Mobile Phones and Tablets
+        </h1>
+            <li class="list-none" >Mobile Phones</li>
+            <li class="list-none" >Mobile Phone & Tablet Accessories</li>
+            <li class="list-none" >Tablets</li>
+            <li class="list-none" >All in Mobile Phones and Tablets</li>
+            <li class="invisible"></li></div>
+        <div>
+            <h1 id="list-heading" class="text-3xl">Motors</h1>
+            <li class="list-none" >Vehicles</li>
+            <li class="list-none" >Auto Accessories & Parts</li>
+            <li class="list-none" >Heavy Vehicles</li>
+            <li class="list-none" >All in Motors</li>
+            <li class="invisible"></li>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
