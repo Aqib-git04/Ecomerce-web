@@ -25,7 +25,7 @@
                         <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Home</a></li>
                         <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">About</a></li>
                         <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Contact</a></li>
-                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Post</a></li>
+                        <li> <a href="post.html" class="text-slate-400 text-sm mx-2 hover:text-black">Post</a></li>
                         <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Categories</a></li>
                     </ul>
                 </nav>
@@ -55,7 +55,7 @@
 
                 <h3 class="" id="center-text">The best place to buy your house,sell your car or find a job in dubai</h3>
 
-                <!-- buttons btw senter  images -->
+                <!-- buttons btw center  images -->
                 <div id="buttons-section" class=" flex items-center justify-center text-black mt-9 mb-4">
                     <button id="btn"
                         class="m-2 px-4 py-2 bg-transparent text-white rounded border hover:bg-red-600 text-sm  ">All</button>
@@ -65,7 +65,7 @@
                     <button id="btn"
                         class="m-2 px-4 py-2 bg-transparent text-white rounded border  hover:bg-red-600 text-sm  ">Electronics</button>
                     <button id="btn"
-                        class="m-2 px-4 py-2 bg-transparent text-white rounded border  hover:bg-red-600 text-sm  ">Mobile
+                        class="m-2 px-4 py-2 bg-transparent text-white rounded border  hover:bg-red-600 text-xs  ">Mobile
                         Phones And
                         Market</button>
                     <button id="btn"
@@ -75,104 +75,392 @@
                         For
                         Rent</button>
                 </div>
-                <div class="flex flex-wrap justify-center items-center">
-                    <!-- Input field -->
-                    <input type="text" class="border px-4 py-2 mr-2 " placeholder="Search For Anything" id="input">
+                <div class="flex flex-wrap justify-center items-center sm:mt-4">
 
-                    <!-- Button -->
-                    <button class="bg-red-600  text-white px-4 py-2" id="submit-btn">Search</button>
+                    <input type="text" class="px-4 py-2 w-6/12 rounded-2xl text-xl mr-3"
+                        placeholder="Search For Anything" id="input">
+
+
+                    <button class="bg-red-600  text-white px-4 py-2 h-10 rounded-lg text-sm" id="search-btn">Search</button>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- image section ends here -->
 
-    <!-- Popular Categories section -->
+        <!-- image section ends here -->
 
+        <!-- Popular Categories section -->
+        <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular Categories</h1>
+        <div class="grid grid-cols-4 gap-4 p-4" id="grid-section">
 
-
-    <div id="popular-categories">
-        
-            <h1 class="font-bold text-3xl mt-8 mb-7">Popular Categories</h1>
-        
-        <div class="flex justify-evenly items-center" id="items-container">
-            
-            <div>
-                <h1 id="list-heading" class="text-3xl">House Appliances</h1>
-                <li class="list-none" >Large Appliances/White Goods</li>
-                <li class="list-none" >Small Kitchen Appliances</li>
-                <li class="list-none" >Outdoor Appliances</li>
-                <li class="list-none" >Small Bathroom Appliances</li>
-                <li class="list-none" >All in House Appliances</li>
+            <div class="bg-white p-4 rounded">
+                <h1 id="list-heading" class="text-3xl "><a href="">House Appliances</a></h1>
+                <li id="list-item" class="list-none hover:underline"><a href="">Large Appliances/White Goods</a></li>
+                <li id="list-item" class="list-none hover:underline"><a href="">Small Kitchen Appliances</a></li>
+                <li id="list-item" class="list-none hover:underline"><a href="">Outdoor Appliances</a></li>
+                <li id="list-item" class="list-none hover:underline"><a href="">Small Bathroom Appliances</a></li>
+                <li id="list-item" class="list-none hover:underline"><a href="">All in House Appliances</a></li>
             </div>
 
-            <div>
-                <h1 id="list-heading" class="text-3xl">Electronics</h1>
-                <li class="list-none" >Computers</li>
-                <li class="list-none" >All in Electronics</li>
-                <li class="invisible"></li>
-                <li class="invisible"></li>
-                <li class="invisible"></li>
-               
+            <div class="bg-white p-4 rounded">
+
+                <div>
+                    <h1 id="list-heading" class="text-3xl"><a href="">Electronics</a></h1>
+                    <li id="list-item" class="list-none hover:underline"><a href="">Computers</a></li>
+                    <li id="list-item" class="list-none hover:underline"><a href="">All in Electronics</a></li>
+                    <li id="invisible-li" class="invisible"></li>
+                    <li id="invisible-li" class="invisible"></li>
+                    <li id="invisible-li" class="invisible"></li>
+
+                </div>
             </div>
-            <div> <h1 id="list-heading" class="text-3xl">Mobile Phones and Tablets
-            </h1>
-                <li class="list-none" >Mobile Phones</li>
-                <li class="list-none" >Mobile Phone & Tablet Accessories</li>
-                <li class="list-none" >Tablets</li>
-                <li class="list-none" >All in Mobile Phones and Tablets</li>
-                <li class="invisible"></li></div>
-            <div>
-                <h1 id="list-heading" class="text-3xl">Motors</h1>
-                <li class="list-none" >Vehicles</li>
-                <li class="list-none" >Auto Accessories & Parts</li>
-                <li class="list-none" >Heavy Vehicles</li>
-                <li class="list-none" >All in Motors</li>
-                <li class="invisible"></li>
+
+            <div class="bg-white p-4 rounded">
+
+                <div>
+                    <h1 id="list-heading" class="text-3xl">Mobile Phones and Tablets</h1>
+                    <li id="list-item" class="list-none hover:underline"><a href="">Mobile Phones</a> </li>
+                    <li id="list-item" class="list-none hover:underline"><a href="">Mobile Phone & Tablet
+                            Accessories</a> </li>
+                    <li id="list-item" class="list-none hover:underline"><a href="">Tablets</a> </li>
+                    <li id="list-item" class="list-none hover:underline"><a href="">All in Mobile Phones and Tablets</a>
+                    </li>
+                    <li id="list-item" class="invisible"></li>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded">
+
+                <div>
+                    <h1 id="list-heading" class="text-3xl"><a href="">Motors</a> </h1>
+                    <li id="list-item" class="list-none hover:underline "><a href="">Vehicles</a> </li>
+                    <li id="list-item" class="list-none hover:underline "><a href="">Auto Accessories & Parts</a> </li>
+                    <li id="list-item" class="list-none hover:underline "><a href="">Heavy Vehicles</a> </li>
+                    <li id="list-item" class="list-none hover:underline "><a href=""> All in Motors</a></li>
+                    <li id="invisible-li" class="invisible"></li>
+                </div>
             </div>
         </div>
 
-        <!-- close popiular categories -->
 
-    </div>
-    <div class="flex justify-evenly items-center" id="items-container">
-            
-        <div>
-            <h1 id="list-heading" class="text-3xl">House Appliances</h1>
-            <li class="list-none" >Large Appliances/White Goods</li>
-            <li class="list-none" >Small Kitchen Appliances</li>
-            <li class="list-none" >Outdoor Appliances</li>
-            <li class="list-none" >Small Bathroom Appliances</li>
-            <li class="list-none" >All in House Appliances</li>
+        <div class="grid grid-cols-4 gap-4 p-4" id="grid-section">
+            <div class="bg-white p-4 rounded">
+
+                <h1 id="list-heading" class="text-2xl">Property for Rent</h1>
+                <li id="list-item" class="list-none hover:underline"><a href="">Resedential Uinits for Rent</a> </li>
+                <li id="list-item" class="list-none hover:underline"><a href=""> Commercial for Rent</a></li>
+                <li id="list-item" class="list-none hover:underline"><a href="">Rooms for Rent (Flatmates)</a> </li>
+                <li id="list-item" class="list-none hover:underline"><a href="">Short Term (Monthly)</a> </li>
+                <li id="list-item" class="list-none hover:underline"><a href="">All in Property for Rent</a> </li>
+            </div>
+
+            <div class="bg-white p-4 rounded">
+                <h1 id="list-heading" class="text-2xl">Property for <br> Sale
+                </h1>
+                <li id="list-item" class="list-none  hover:underline "><a href="">Residential For Sale</a> </li>
+                <li id="list-item" class="list-none hover:underline "><a href="">Commercial For Sale</a> </li>
+                <li id="list-item" class="invisible hover:underline "><a href="">Land For Sale</a> </li>
+                <li id="invisible-li" class="invisible hover:underline "><a href="">Multiple Units for Sale</a> </li>
+                <li id="invisible-li" class="invisible hover:underline "><a href="">All in Property for Sale </a> </li>
+            </div>
+
+            <div class="bg-white p-4 rounded">
+                <h1 id="list-heading" class="text-2xl">ClassiFields
+                </h1>
+                <li id="list-item" class="list-none hover:underline"><a href="">MComputer & Networking</a> </li>
+                <li id="list-item" class="list-none hover:underline "><a href="">Clothing & Acessories</a> </li>
+                <li id="list-item" class="list-none hover:underline "><a href="">Jewelry & Watches</a> </li>
+                <li id="list-item" class="list-none hover:underline "><a href="">All in ClassiFields <a href=""></a>
+                    </a> </li>
+                <li id="invisible-li" class="invisible"></li>
+            </div>
+
+            <div class="bg-white p-4 rounded">
+                <h1 id="list-heading" class="text-2xl">Garden</h1>
+                <li id="list-item" class="list-none hover:underline "> <a href="">Furniture</a> </li>
+                <li id="list-item" class="list-none hover:underline "> <a href="">Home Acessories</a> </li>
+                <li id="list-item" class="list-none"> <a href="">HGarden & Outdoor</a> </li>
+                <li id="list-item" class="list-none hover:underline "> <a href="">Lighting & Fans</a> </li>
+                <li id="invisible-li" class="invisible hover:underline "> <a href="">All in Furniture, Home & Garden</a>
+                </li>
+            </div>
         </div>
 
-        <div>
-            <h1 id="list-heading" class="text-3xl">Electronics</h1>
-            <li class="list-none" >Computers</li>
-            <li class="list-none" >All in Electronics</li>
-            <li class="invisible"></li>
-            <li class="invisible"></li>
-            <li class="invisible"></li>
-           
+        <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular in House Appliances</h1>
+        <!-- 1st card -->
+
+        <div class="card-list">
+
+            <a href="#" class="card-item">
+                <img src="./assets/17_toshiba fridge.jpeg" alt="Card Image">
+                <span class="developer">£ 80000</span>
+                <h3>Toshiba Fridge.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/37_AC.jpg" alt="Card Image">
+                <span class="developer">£ 81000</span>
+                <h3>Dawlance 1.5 Ton AC.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/44_sam tv.jpeg" alt="Card Image">
+                <span class="developer">£ 150000</span>
+                <h3>Samsung 4k 55 inch TV.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/imgs.jpg" alt="Card Image">
+                <span class="developer">£ 15000</span>
+                <h3>Dish Washer.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/17_toshiba fridge.jpeg" alt="Card Image">
+                <span class="developer">£ 80000</span>
+                <h3>Toshiba Fridge.</h3>
+
+            </a>
         </div>
-        <div> <h1 id="list-heading" class="text-3xl">Mobile Phones and Tablets
+
+        <!-- second cart -->
+
+        <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular in Electronics</h1>
+        <div class="card-list">
+
+            <a href="#" class="card-item">
+                <img src="./assets/joystick.jpeg" alt="Card Image">
+                <span class="developer">£ 30000</span>
+                <h3>PS4 Fat 500GB.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/47_printer.jpeg" alt="Card Image">
+                <span class="developer">£ 55000</span>
+                <h3>Epson Color Printer.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/49_monitor.jpeg" alt="Card Image">
+                <span class="developer">£ 12000</span>
+                <h3>ViewSonic 22 inch Monitor.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/50_spiderman-2-ps5-1-1.jpg" alt="Card Image">
+                <span class="developer">£ 12200</span>
+                <h3>Marvel's Spiderman 2 PS5.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/51_airpods.jpeg" alt="Card Image">
+                <span class="developer">£ 25000</span>
+                <h3>Airpods pro 2.</h3>
+
+            </a>
+        </div>
+
+        <!-- third cart -->
+        <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular in Mobile Phones and Tablets
         </h1>
-            <li class="list-none" >Mobile Phones</li>
-            <li class="list-none" >Mobile Phone & Tablet Accessories</li>
-            <li class="list-none" >Tablets</li>
-            <li class="list-none" >All in Mobile Phones and Tablets</li>
-            <li class="invisible"></li></div>
-        <div>
-            <h1 id="list-heading" class="text-3xl">Motors</h1>
-            <li class="list-none" >Vehicles</li>
-            <li class="list-none" >Auto Accessories & Parts</li>
-            <li class="list-none" >Heavy Vehicles</li>
-            <li class="list-none" >All in Motors</li>
-            <li class="invisible"></li>
+        <div class="card-list">
+
+            <a href="#" class="card-item">
+                <img src="./assets/7_nokia.jpeg" alt="Card Image">
+                <span class="developer">£ 2000</span>
+                <h3>nokia 3310.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/huwewa.jpg" alt="Card Image">
+                <span class="developer">£ 200000</span>
+                <h3>Huawei Y9 Prime.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/16_ipad.jpeg" alt="Card Image">
+                <span class="developer">£ 45000</span>
+                <h3>ipad Pro without keyboard.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/40_iphone.jpg" alt="Card Image">
+                <span class="developer">£ 250000</span>
+                <h3>Iphone 14 Pro Max 256 GB.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/samsung tab.jpeg" alt="Card Image">
+                <span class="developer">£ 50000</span>
+                <h3>Samsung Galaxy Tab 6 Lite</h3>
+
+            </a>
         </div>
+
+        <!-- fourth cart -->
+
+        <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular in Motors
+        </h1>
+        <div class="card-list">
+
+            <a href="#" class="card-item">
+                <img src="./assets/tire.jpeg" alt="Card Image">
+                <span class="developer">£ 2000</span>
+                <h3>Corolla tires 14 inch (pair of 4).</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/31_corolla.jpeg" alt="Card Image">
+                <span class="developer">£ 2000000</span>
+                <h3>Toyota Corolla 2012.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/41_swift.jpeg" alt="Card Image">
+                <span class="developer">£ 28000000</span>
+                <h3>Suzuki Swift.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/42_sontata.jpeg" alt="Card Image">
+                <span class="developer">£ 450000000</span>
+                <h3>Hyondai Sonanta 2022 .</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/honda city car.jpeg" alt="Card Image">
+                <span class="developer">£ 1000000</span>
+                <h3>Hoda City</h3>
+
+            </a>
+        </div>
+
+
+        <!-- fifth cart -->
+
+        <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular in Property for Rent
+
+        </h1>
+        <div class="card-list">
+
+            <a href="#" class="card-item">
+                <img src="./assets/38_prop rent.jpeg" alt="Card Image">
+                <span class="developer">£ 20000</span>
+                <h3>120 Sqr yards house.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/52_rent.jpeg" alt="Card Image">
+                <span class="developer">£ 25000</span>
+                <h3>Apartment for Rent.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/38_prop rent.jpeg" alt="Card Image">
+                <span class="developer">£ 20000</span>
+                <h3>120 Sqr yards house.</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/52_rent.jpeg" alt="Card Image">
+                <span class="developer">£ 25000</span>
+                <h3>Apartment for Rent .</h3>
+
+            </a>
+            <a href="#" class="card-item">
+                <img src="./assets/38_prop rent.jpeg" alt="Card Image">
+                <span class="developer">£ 20000</span>
+                <h3>120 Sqr yards house</h3>
+
+            </a>
+        </div>
+
+        <!-- Main div ends here -->
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- footer -->
+    <hr class="h-0 w-11/12 m-auto bg-black">
+
+    <footer class="text-black p-8 flex flex-wrap justify-around">
+
+        <!-- Column 1 -->
+        <div class="footer-column mb-8 mx-4">
+            <h3 class="text-lg font-bold mb-4">Company</h3>
+            <ul>
+                <li><a href="#" class="hover:underline text-blue-700">About Us</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Advertising</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Careers</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Terms of Use</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Privacy Policy</a></li>
+                <li><a href="#" class="hover:underline text-blue-700"></a></li>
+            </ul>
+        </div>
+        <div class="footer-column mb-8 mx-4">
+            <h3 class="text-lg font-bold mb-4">UAE</h3>
+            <ul>
+                <li><a href="#" class="hover:underline text-blue-700">Dubai
+                    </a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Abu Dhabi</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Ras Al Khaimah</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Sharjah
+                    </a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Fujairah</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Ajman</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Umm Al Qawain</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Al Ain</a></li>
+
+
+            </ul>
+        </div>
+        <div class="footer-column mb-8 mx-4">
+            <h3 class="text-lg font-bold mb-4">Countries</h3>
+            <ul>
+                <li><a href="#" class="hover:underline text-blue-700">Egypt</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Bahrain</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Lebanon</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Kuwait</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Oman</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Qatar
+                    </a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Pakistan</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-column mb-8 mx-4">
+            <h3 class="text-lg font-bold mb-4">Get Social</h3>
+            <ul>
+                <li><a href="#" class="hover:underline text-blue-700">Facebook
+                    </a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Twitter</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Youtube</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Instagram</a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+            </ul>
+        </div>
+        <div class="footer-column mb-8 mx-4">
+            <h3 class="text-lg font-bold mb-4">Support</h3>
+            <ul>
+                <li><a href="#" class="hover:underline text-blue-700">Help</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Contact Us</a></li>
+                <li><a href="#" class="hover:underline text-blue-700">Call Us</a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+            </ul>
+        </div>
+        <div class="footer-column mb-8 mx-4">
+            <h3 class="text-lg font-bold mb-4">Languages</h3>
+            <ul>
+                <li><a href="#" class="hover:underline text-blue-700">English</a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+                <li><a href="#" class="hover:underline"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

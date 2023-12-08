@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="p-4">
+        <!-- header -->
+        <header id="header" class="fixed top-0 left-0 w-full text-slate-400 p-4 flex items-center justify-between z-50">
+            <!-- content-inside-header -->
+            <div class="flex">
+                <h1 class="text-xl cursor-pointer hover:text-black">Essential Classifieds</h1>
+                <nav class="flex-grow text-center">
+
+                    <!-- list section -->
+                    <ul id="li" class="flex ml-4">
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Home</a></li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">About</a></li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Contact</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Post</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Categories</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex" id="Register-login">
+                <span class="text-sm flex cursor-pointer hover:text-black">Register | Log In</span>
+
+                <!--  hidden hamburger-menu for responsiveness  -->
+                <div id="hamburger" class="ml-4 hidden ">
+                    <div class="w-5 h-1 m-1  bg-white "></div>
+                    <div class="w-5 h-1 m-1  bg-white"></div>
+                    <div class="w-5 h-1 m-1  bg-white"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- imgae section -->
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <!-- <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6"> -->
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img id="main-center-img" src="./assets/laptop.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img id="main-center-img" src="./assets/laptop.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img id="main-center-img" src="./assets/laptop.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img  id="main-center-img" src="./assets/laptop.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img  id="main-center-img" src="./assets/laptop.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img  id="main-center-img" src="./assets/laptop.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li> -->
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li class="m-3 border">
+                        <label for="slide-1"><img src="./assets/laptop.jpeg" alt="">
+
+                        </label>
+                    </li>
+                    <li class="m-3 border">
+                        <label for="slide-2"><img src="./assets/laptop.jpeg" alt=""></label>
+                    </li>
+                    <li class="m-3 border">
+                        <label for="slide-3"><img src="./assets/laptop.jpeg" alt=""></label>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</body>
+
+</html>
