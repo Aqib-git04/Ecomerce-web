@@ -22,11 +22,25 @@
 
                     <!-- list section -->
                     <ul id="li" class="flex ml-4">
-                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Home</a></li>
-                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">About</a></li>
-                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Contact</a></li>
-                        <li> <a href="post.html" class="text-slate-400 text-sm mx-2 hover:text-black">Post</a></li>
-                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Categories</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black" target="_blank">Home</a>
+                        </li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black" target="_blank">About</a>
+                        </li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank ">Contact</a></li>
+                        <li> <a href="post.html" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank">Post</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank">Categories</a></li>
+                        <li id="Register-hidden-li"> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank">Register | Log In</a></li>
+
+                        <style>
+
+                        </style>
+
+                        <!-- btn for close the menu  -->
+                        <span id="closeButton" class="hidden" onclick="closemenu()">✖</span>
                     </ul>
                 </nav>
             </div>
@@ -34,7 +48,9 @@
                 <span class="text-sm flex cursor-pointer hover:text-black">Register | Log In</span>
 
                 <!--  hidden hamburger-menu for responsiveness  -->
-                <div id="hamburger" class="ml-4 hidden ">
+                <!-- btn for open the menu  -->
+
+                <div id="hamburger" class="ml-4 hidden" onclick="openmenu()">
                     <div class="w-5 h-1 m-1  bg-white "></div>
                     <div class="w-5 h-1 m-1  bg-white"></div>
                     <div class="w-5 h-1 m-1  bg-white"></div>
@@ -84,8 +100,9 @@
                 </div>
             </div>
         </div>
-
         <!-- image section ends here -->
+
+
 
         <!-- Popular Categories section -->
         <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular Categories</h1>
@@ -184,6 +201,9 @@
             </div>
         </div>
 
+        <!-- cart section  -->
+
+
         <h1 id="popular-categories" class="heading mt-11 text-4xl font-bold">Popular in House Appliances</h1>
         <!-- 1st card -->
 
@@ -194,10 +214,10 @@
                 <span class="developer">£ 80000</span>
                 <h3>Toshiba Fridge.</h3>
                 <small class="text-base">Best toshiba fridge in UAE</small>
-                        <div class="mt-2">
-                           <b>UAE</b>  <br>
-                            <b>Abu Dhabi</b>
-                        </div>
+                <div class="mt-2">
+                    <b>UAE</b> <br>
+                    <b>Abu Dhabi</b>
+                </div>
             </a>
             <a href="#" class="card-item">
                 <img src="./assets/37_AC.jpg" alt="Card Image">
@@ -319,13 +339,13 @@
             </a>
             <a href="#" class="card-item">
                 <img src="./assets/41_swift.jpeg" alt="Card Image">
-                <span class="developer">£ 28000000</span>
+                <span class="developer">£ 280000</span>
                 <h3>Suzuki Swift.</h3>
 
             </a>
             <a href="#" class="card-item">
                 <img src="./assets/42_sontata.jpeg" alt="Card Image">
-                <span class="developer">£ 450000000</span>
+                <span class="developer">£ 4500000</span>
                 <h3>Hyondai Sonanta 2022 .</h3>
 
             </a>
@@ -464,8 +484,8 @@
             </ul>
         </div>
     </footer>
-    <source src="app.js" type="">
-    
+
+    <script src="app.js"></script>
 
 </body>
 

@@ -20,11 +20,25 @@
 
                     <!-- list section -->
                     <ul id="li" class="flex ml-4">
-                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Home</a></li>
-                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">About</a></li>
-                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Contact</a></li>
-                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Post</a></li>
-                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black">Categories</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black" target="_blank">Home</a>
+                        </li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black" target="_blank">About</a>
+                        </li>
+                        <li><a href="#" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank ">Contact</a></li>
+                        <li> <a href="post.html" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank">Post</a></li>
+                        <li> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank">Categories</a></li>
+                        <li id="Register-hidden-li"> <a href="#" class="text-slate-400 text-sm mx-2 hover:text-black"
+                                target="_blank">Register | Log In</a></li>
+
+                        <style>
+
+                        </style>
+
+                        <!-- btn for close the menu  -->
+                        <span id="closeButton" class="hidden" onclick="closemenu()">✖</span>
                     </ul>
                 </nav>
             </div>
@@ -32,7 +46,9 @@
                 <span class="text-sm flex cursor-pointer hover:text-black">Register | Log In</span>
 
                 <!--  hidden hamburger-menu for responsiveness  -->
-                <div id="hamburger" class="ml-4 hidden ">
+                <!-- btn for open the menu  -->
+
+                <div id="hamburger" class="ml-4 hidden" onclick="openmenu()">
                     <div class="w-5 h-1 m-1  bg-white "></div>
                     <div class="w-5 h-1 m-1  bg-white"></div>
                     <div class="w-5 h-1 m-1  bg-white"></div>
@@ -40,6 +56,7 @@
             </div>
         </header>
     </div>
+
 
     <!-- imgae section -->
     <section id="main-section-inside-crousal">
@@ -52,7 +69,7 @@
                 <ul class="carousel__slides">
                     <li class="carousel__slide">
                         <figure>
-                            <div>
+                            <div id="laptop-img">
                                 <img id="main-center-img" src="./assets/laptop.jpeg" alt="">
                             </div>
                             <figcaption>
@@ -188,6 +205,7 @@
             </ul>
         </div>
     </footer>
+    <script src="app.js"></script>
 
 </body>
 
